@@ -1,0 +1,2 @@
+tr " " "\n" to_delete.txt | xargs -I %f rm delete/%f.txt
+find . -name '*$1*' | rev | cut -d '/' -f 1 | rev | sort -r 
